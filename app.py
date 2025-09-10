@@ -52,7 +52,7 @@ if uploaded_file is not None and model is not None:
 
     with col1:
         st.subheader("🖼️ Gambar Asli")
-        st.image(image, caption="Gambar yang Diunggah", use_column_width=True)
+        st.image(image, caption="Gambar yang Diunggah", use_container_width=True)
 
     with col2:
         st.subheader("🎨 Hasil Segmentasi")
@@ -64,7 +64,7 @@ if uploaded_file is not None and model is not None:
         st.image(
             result_plot_rgb,
             caption=f"Hasil Segmentasi dengan Confidence ≥ {confidence_level:.2f}",
-            use_column_width=True
+            use_container_width=True
         )
 
 elif model is None:
